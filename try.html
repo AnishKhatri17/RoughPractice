@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Management System Dashboard</title>
+    <link rel="stylesheet" href="./admin_dashboard.css">
+    <style>
+        /* Custom CSS styles for the dashboard */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10;
+            background-color: #6d0e0e;
+        }
+        header {
+            /* background-color: rgb(44, 206, 198); */
+            background-color: #6d0e0e;
+            color: #000000;
+            text-align: center;
+            padding: 10px;
+        }
+        h1 {
+      text-align: center;
+      color: #c4c56e;
+      padding-top: 2px;
+    }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            width: 80%;
+            margin: 10px;
+        }
+        .card {
+            background-color: #504edd;
+            border: 2px solid #f0ec0f96;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 50px;
+            width: 250px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .card h2 {
+            margin-top: 0;
+            /* text-align: justify; */
+        }
+        p{
+            margin-top: auto;
+            text-align: right;
+            
+        }
+    </style>
+</head>
+<body>
+    </header>
+    
+    <div class="container">
+        <!-- Blood Group: A+ -->
+        <div class="card" onclick="showDetails('A+')">
+            <h2>A+</h2>
+            <p>20 </p>
+        </div>
+        <!-- Blood Group: A- -->
+        <div class="card" onclick="showDetails('A-')">
+            <h2>A-</h2>
+            <i class="fa fa-tint" style="font-size:48px;color:rgb(236, 220, 220)"></i>
+            <p>15</p>
+        </div>
+
+        <!-- Blood Group: B+ -->
+        <div class="card" onclick="showDetails('B+')">
+            <h2>B+</h2>
+            <p>25</p>
+        </div>
+
+        <!-- Blood Group: B- -->
+        <div class="card" onclick="showDetails('B-')">
+            <h2>B-</h2>
+            <p>20</p>
+        </div>
+
+            <!-- Blood Group: A+ -->
+         <div class="card" onclick="showDetails('AB+')">
+            <h2>AB+</h2>
+            <p>20</p>
+        </div>
+
+        <!-- Blood Group: A+ -->
+        <div class="card" onclick="showDetails('AB-')">
+            <h2>AB-</h2>
+            <p>20</p>
+        </div>
+
+        <!-- Blood Group: A+ -->
+        <div class="card" onclick="showDetails('O+')">
+            <h2>O+</h2>
+            <p>20</p>
+        </div>
+
+        <!-- Blood Group: A+ -->
+        <div class="card" onclick="showDetails('O-')">
+            <h2>O-</h2>
+            <p> 20 </p>
+        </div>
+
+    <div class="card" onclick="showDetails('O-')">
+        <h2>Total Donars</h2>
+        <p> 25</p>
+    </div>
+    <!-- Blood Group: A+ -->
+    <div class="card" onclick="showDetails('O-')">
+        <h2>Total Requests</h2>
+        <p> 25</p>
+    </div>
+    <!-- Blood Group: A+ -->
+    <div class="card" onclick="showDetails('O-')">
+        <h2>Approved Requests</h2>
+        <p> 25</p>
+   </div>
+   <div class="card" onclick="showDetails('O-')">
+    <h2>Total Blood Unit</h2>
+    <p> 25</p>
+   </div>
+   </div>
+
+   <div class="sidebar">
+    <div class="logo"></div>
+    <ul class="menu">
+        <li class="active">
+            <a href="./admin_dashboard.php">
+            <i class="fa-solid fa-user-secret"></i>
+                <!-- <i class="fas fa-tachometer-alt"></i> -->
+                <span>Admin Dashboard</span>
+            </a>
+        </li>
+        <li>
+            <a href="./dashboard_redirect/patient_reg_fetch.php">
+            <i class="fa-solid fa-bed"></i>
+                <!-- <i class="fas fa-home"></i> -->
+                <span>Patient Management</span>
+            </a>
+        </li>
+        <li>
+            
+            <a href="./dashboard_redirect/donor_reg_fetch.php">
+            <i class="fa-solid fa-users"></i>
+                <!-- <i class="fas fa-user"></i> -->
+                <span>Donor Management</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+            <i class="fa-solid fa-user-injured"></i>
+                <!-- <i class="fas fa-credit-card"></i> -->
+                <span>Blood Patient</span>    
+            </a>
+        </li>
+        <li>
+            <a href="#">
+            <i class="fa fa-user-plus"></i>
+                <!-- <i class="fas fa-calendar-check"></i> -->
+                <span>Blood Donor</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fas fa-question-circle"></i>
+                <span>Blood Stock</span>
+            </a>
+        </li>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    
+        <li>
+                
+            <a href="./index.php">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Log out</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+.registrationbox
+{
+    width: 450px;
+    height: 600px;
+    background: rgb(204, 223, 234);
+    color: rgb(0, 0, 0);
+    top: 10%;
+    left: 37%;
+    position: absolute;
+    translate: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 30px 30px;
+    text-transform: capitalize;
+}
+
+.log
+{
+    margin-bottom: 10px;
+    width: 100%;
+    /* padding : 5px; */
+}
+
+.group
+{
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px 1px;
+}
+ 
+.registration input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    /* outline: none; */
+    height: 40px;
+    color: brown;
+    font-size: 16px;
+}
+
+body
+{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; */
+    background-image: url('patientbackground.jpg') ;
+    background-repeat: no-repeat;
+    background-size: 1500px 800px;
+    /* background-position: center; */
+}

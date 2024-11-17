@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Nutritional Details</title>
+    <link rel="stylesheet" href="foodlayout.css">
+</head>
+<body>
+    <div class="foodcontainer">
+        <!-- First Food Item -->
+        <div class="food-item">
+            <img src="salmon.jpg" alt="Salmon" class="food-image">
+            <div class="food-details">
+                <h2>Salmon</h2>
+                <p><strong>Calories:</strong> 416</p>
+                <p><strong>Protein:</strong> 45.2 grams</p>
+                <p><strong>Fat:</strong> 25.4 grams</p>
+                <p><strong>Omega-3 Fatty Acids:</strong> 4.4 grams</p>
+                <p><strong>Vitamin D:</strong> 18.6 mcg (93% DV)</p>
+                <p><strong>Vitamin B12:</strong> 6.8 mcg (283% DV)</p>
+                <p><strong>Selenium:</strong> 47.8 mcg (87% DV)</p>
+            </div>
+        </div>
+        
+        <!-- Second Food Item -->
+        <div class="food-item">
+            <img src="tuna.jpg" alt="Tuna" class="food-image">
+            <div class="food-details">
+                <h2>Tuna</h2>
+                <p><strong>Calories:</strong> 232</p>
+                <p><strong>Protein:</strong> 52.5 grams</p>
+                <p><strong>Fat:</strong> 0.8 grams</p>
+                <p><strong>Omega-3 Fatty Acids:</strong> 0.2 grams</p>
+                <p><strong>Vitamin B3 (Niacin):</strong> 22.2 mg (111% DV)</p>
+                <p><strong>Vitamin B12:</strong> 4.4 mcg (183% DV)</p>
+                <p><strong>Selenium:</strong> 80.6 mcg (146% DV)</p>
+            </div>
+        </div>
+
+        <!-- Add more food items here -->
+        <div class="food-item">
+            <img src="eggs.jpg" alt="Egg" class="food-image">
+            <div class="food-details">
+                <h2>Eggs</h2>
+                <p><strong>Calories:</strong> 232</p>
+                <p><strong>Protein:</strong> 52.5 grams</p>
+                <p><strong>Fat:</strong> 0.8 grams</p>
+                <p><strong>Omega-3 Fatty Acids:</strong> 0.2 grams</p>
+                <p><strong>Vitamin B3 (Niacin):</strong> 22.2 mg (111% DV)</p>
+                <p><strong>Vitamin B12:</strong> 4.4 mcg (183% DV)</p>
+                <p><strong>Selenium:</strong> 80.6 mcg (146% DV)</p>
+            </div>
+        </div>
+    </div>
+
+
+<!-- 
+    HTML Structure:
+The .container div uses CSS Grid to arrange child .food-item divs in a responsive grid layout.
+Each .food-item contains an image and a .food-details div with nutritional information.
+CSS Styling:
+
+.container uses display: grid with grid-template-columns to create a responsive grid layout.
+.food-item styles include borders, background color, and box-shadow for visual appeal. It also scales up slightly on hover for an interactive effect.
+.food-image ensures that images are responsive and fit their containers.
+.food-details styles the text content with padding and margin adjustments. 
+
+Grid Layout: The grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) property in the CSS automatically adjusts the number of columns based on the available width and the minimum size (300px) of each grid item. This means that as you add more .food-item divs, they will automatically flow into the next available space in the grid layout.
+
+Adding Items: By adding more .food-item divs to the .container, they will be positioned next to each other in the grid format. The grid layout takes care of arranging them in rows and columns as needed.
+-->
+</body>
+</html>

@@ -1,0 +1,44 @@
+/* Basic styling for the container and grid layout */
+.foodcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Styling for each food item */
+.food-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.food-item:hover 
+{
+    transform: scale(1.02);
+}
+
+/* Styling for images */
+.food-image {
+    width: 100%;
+    max-height: 200px;
+    /* height: auto; */
+    display: block;
+}
+
+/* Styling for the food details section */
+.food-details {
+    padding: 15px;
+}
+
+.food-details h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.food-details p {
+    margin: 5px 0;
+}
